@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uFt-bP-WsW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="JEV-7v-Sx7">
+            <objects>
+                <viewController id="uFt-bP-WsW" customClass="MainController" customModule="BookOfChanges" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1S2-BD-X1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8x1-H8-F7U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLz-WI-0zg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="-84.375"/>
+        </scene>
+        <!--SplashVC-->
+        <scene sceneID="GSJ-W5-MJZ">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="tHa-Jc-Tjb" customClass="SplashVC" customModule="BookOfChanges" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HCA-JR-Tuf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-rG-AAG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jsp-hN-rmk">
+                                <rect key="frame" x="114" y="174" width="186" height="181"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Name" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nqn-qJ-VRs">
+                                <rect key="frame" x="89.5" y="387" width="235.5" height="95"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dTD-3n-CFH">
+                                <rect key="frame" x="145" y="814" width="124.5" height="28"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="28"/>
+                                <color key="textColor" red="0.2156862745" green="0.08235294118" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Jsp-hN-rmk" firstAttribute="top" secondItem="N7U-4E-4vF" secondAttribute="top" constant="130" id="DDk-SV-272"/>
+                            <constraint firstItem="dqD-rG-AAG" firstAttribute="leading" secondItem="N7U-4E-4vF" secondAttribute="leading" id="EXZ-eR-lxG"/>
+                            <constraint firstItem="dqD-rG-AAG" firstAttribute="trailing" secondItem="N7U-4E-4vF" secondAttribute="trailing" id="ISb-sh-Tr2"/>
+                            <constraint firstItem="Nqn-qJ-VRs" firstAttribute="top" secondItem="Jsp-hN-rmk" secondAttribute="bottom" constant="32" id="VFb-9m-XUA"/>
+                            <constraint firstItem="Jsp-hN-rmk" firstAttribute="centerX" secondItem="HCA-JR-Tuf" secondAttribute="centerX" id="VhE-lP-rPo"/>
+                            <constraint firstItem="Nqn-qJ-VRs" firstAttribute="centerX" secondItem="HCA-JR-Tuf" secondAttribute="centerX" id="aIB-OL-L4u"/>
+                            <constraint firstItem="dTD-3n-CFH" firstAttribute="centerX" secondItem="HCA-JR-Tuf" secondAttribute="centerX" id="dLF-HH-0zV"/>
+                            <constraint firstAttribute="bottom" secondItem="dqD-rG-AAG" secondAttribute="bottom" id="qg1-9h-NcW"/>
+                            <constraint firstItem="N7U-4E-4vF" firstAttribute="bottom" secondItem="dTD-3n-CFH" secondAttribute="bottom" constant="20" id="qtd-4f-YWq"/>
+                            <constraint firstItem="dqD-rG-AAG" firstAttribute="top" secondItem="HCA-JR-Tuf" secondAttribute="top" id="t9l-fM-Puc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N7U-4E-4vF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9w8-hw-zGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-645" y="-102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="750" height="1334"/>
+        <image name="Logo" width="186" height="181"/>
+        <image name="Name" width="235.5" height="95"/>
+    </resources>
+</document>
